@@ -1,6 +1,6 @@
 # Live
 A swift project live app, we intergrated Tencent Live Video Broadcasting SDK in the app.
-## The following SDK has been deleted because of the limmit with packege size
+## The following SDK has been deleted because of the limit with packege size
 * TXRTMPSDK.framework
 * IMFriendshipExt.framework
 * IMGroupExt.framework
