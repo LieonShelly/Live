@@ -1,0 +1,6 @@
+framework module FXDanmaku {
+  umbrella header "FXDanmaku-umbrella.h"
+
+  export *
+  module * { export * }
+}
