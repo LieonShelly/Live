@@ -7,7 +7,7 @@ A swift project live app, we integrated Tencent Live Video Broadcasting SDK in t
 * Tencent Mobile Living Cloud
 * Tencent Mobile Communication Cloud
 
-## Main Logic ：
+## Main Logic 
 The project can be divided into three parts, they are home list, broadcast and user center etc.
 
 * The data of home list was come from our back server, when user tap the specific data record the app will enter RoomViewController. 
@@ -15,7 +15,7 @@ The project can be divided into three parts, they are home list, broadcast and u
 * The anchor broadcast part included build IM Chat room and group, pushing video stream into Tencent Server.
 * The most simple part is User center, which contains some related user's message and the setting of app. 
 
-## What's the trouble in this project?
+## What's the trouble in this project
 It's become a very easy way to pull and push video stream because of third part living stream SDK. Our video stream has been saved in Tencent Cloud, so we just make a management to store the user data and distribute the stream address to client from Tencent Server.
 In other words, the trouble comes from  RoomViewController's logic, BroadcastViewController's logic, and the whole app performance.
 
