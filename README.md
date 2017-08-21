@@ -1,7 +1,7 @@
 [![Travis CI](https://travis-ci.org/ReactiveX/RxSwift.svg?branch=master)](https://travis-ci.org/ReactiveX/RxSwift) ![platform](https://img.shields.io/badge/platform-iOS9.0-brightgreen.svg)
 
 # Live
-A swift project liv app, we integrated Tencent Live Video Broadcasting SDK in the app.
+A swift project live app, we integrated Tencent Live Video Broadcasting SDK in the app.
 
 ## The Living Stream SDK 
 * Tencent Mobile Living Cloud
@@ -87,8 +87,7 @@ class IMMessage: Model {
         }
         queue.addOperation(op1)
         queue.addOperation(op2)
-    }
-```
+    } ```
 
 ## Anchor version（definitely open hardware acceleration）
 There are no further ado beacause the logic of Anchor version(BroadcastViewController) is most likely RoomViewController, It can be simply summarized pushing video stream, login IM, create Room, create chat group, send text message, receive IMMessage, play gift animation etc.
