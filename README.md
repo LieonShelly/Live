@@ -1,6 +1,6 @@
 [![Travis CI](https://travis-ci.org/ReactiveX/RxSwift.svg?branch=master)](https://travis-ci.org/ReactiveX/RxSwift) ![platform](https://img.shields.io/badge/platform-iOS9.0-brightgreen.svg)
 
-![GitHub set up-w100-h120](https://github.com/lieonCX/Live/blob/master/Live/Assets.xcassets/LaunchImage.launchimage/%EF%BC%94%EF%BD%93.png)
+![GitHub set up-w50-h80](https://github.com/lieonCX/Live/blob/master/Live/Assets.xcassets/LaunchImage.launchimage/%EF%BC%94%EF%BD%93.png)
 
 # Live
 A swift project liv app, we integrated Tencent Live Video Broadcasting SDK in the app.
