@@ -1,6 +1,6 @@
 [![Travis CI](https://travis-ci.org/ReactiveX/RxSwift.svg?branch=master)](https://travis-ci.org/ReactiveX/RxSwift) ![platform](https://img.shields.io/badge/platform-iOS9.0-brightgreen.svg)
 
-![GitHub set up-w140](https://github.com/lieonCX/Live/blob/master/Live/Assets.xcassets/LaunchImage.launchimage/%EF%BC%94%EF%BD%93.png)
+![GitHub set up-w100-h120](https://github.com/lieonCX/Live/blob/master/Live/Assets.xcassets/LaunchImage.launchimage/%EF%BC%94%EF%BD%93.png)
 
 # Live
 A swift project liv app, we integrated Tencent Live Video Broadcasting SDK in the app.
@@ -17,7 +17,7 @@ The project can be divided into three parts, they are home list, broadcast and u
 * The anchor broadcast part included build IM Chat room and group, pushing video stream into Tencent Server.
 * The most simple part is User center, which contains some related user's message and the setting of app. 
 
-## What's the trouble this project?
+## What's the trouble in this project?
 It's become a very easy way to pull and push video stream because of third part living stream SDK. Our video stream has been saved in Tencent Cloud, so we just make a management to store the user data and distribute the stream address to client from Tencent Server.
 In other words, the trouble comes from  RoomViewController's logic, BroadcastViewController's logic, and the whole app performance.
 
@@ -29,7 +29,7 @@ In other words, the trouble comes from  RoomViewController's logic, BroadcastVie
 * About IM
 	What IM work is IM login joinning chat group, sending text message, danmaku message, continue tapping gift message, BigGift message, and leave chat room etc. 
 
-	1. The format of message 
+1. The format of message 
 
 ```
 class IMMessage: Model {
@@ -54,13 +54,13 @@ class IMMessage: Model {
 }
 ```
 
-  2. Text Message
+2. Text Message
 		The text message contains common text message which will show in message tableView, and danmaku message which will show in danmaku view. The common text message has been handled into rich attribute string with using[YYText](https://github.com/ibireme/YYText). The merit is reducing the UI controls of message table view）
     
-* Danmaku
+3. Danmaku
 	It's comes from github's [FXDanmaku](https://github.com/ShawnFoo/FXDanmaku)
 	
-* About big gift message
+4. About big gift message
   I most deeply think the gift animation is most  big trouble, which contains the cpu comsume and memory cosume. Obviously, I still use the third party vendor which name [FXAnimationEngine](https://github.com/ShawnFoo/FXAnimationEngine)
 	```
 	  fileprivate func playAnimation(with gift: IMMessage) {
@@ -91,6 +91,7 @@ class IMMessage: Model {
         queue.addOperation(op2)
     }
 ```
+
 ## Anchor version（definitely open hardware acceleration）
 There are no further ado beacause the logic of Anchor version(BroadcastViewController) is most likely RoomViewController, It can be simply summarized pushing video stream, login IM, create Room, create chat group, send text message, receive IMMessage, play gift animation etc.
 
