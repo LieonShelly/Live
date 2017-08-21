@@ -20,14 +20,14 @@ It's become a very easy way to pull and push video stream because of third part 
 In other words, the trouble comes from  RoomViewController's logic, BroadcastViewController's logic, and the whole app performance.
 
 ### RoomViewController's logic
-* A easy way to pull video stream
-  we just need setup the position of player in the RoomViewController. then we send the play stream address to player. OK, here we go.
-	By the way there are three type of stream address, such as .rtmp, .flv, .mp4. I strongly suggest to use .flv type.
+#### A easy way to pull video stream
+we just need setup the position of player in the RoomViewController. then we send the play stream address to player. OK, here we go.
+By the way there are three type of stream address, such as .rtmp, .flv, .mp4. I strongly suggest to use .flv type.
 	
-* About IM
-	What IM work is IM login joinning chat group, sending text message, danmaku message, continue tapping gift message, BigGift message, and leave chat room etc. 
+#### About IM
+What IM work is IM login joinning chat group, sending text message, danmaku message, continue tapping gift message, BigGift message, and leave chat room etc. 
 
-1. The format of message 
+##### The format of message 
 
 ```
 class IMMessage: Model {
@@ -52,14 +52,14 @@ class IMMessage: Model {
 }
 ```
 
-2. Text Message
-	*The text message contains common text message which will show in message tableView, and danmaku message which will show in danmaku view. The common text message has been handled into rich attribute string with using[YYText](https://github.com/ibireme/YYText). The merit is reducing the UI controls of message table view）
+##### Text Message
+The text message contains common text message which will show in message tableView, and danmaku message which will show in danmaku view. The common text message has been handled into rich attribute string with using[YYText](https://github.com/ibireme/YYText). The merit is reducing the UI controls of message table view）
     
-3. Danmaku
-	*It's comes from github's [FXDanmaku](https://github.com/ShawnFoo/FXDanmaku)
+##### Danmaku
+It's comes from github's [FXDanmaku](https://github.com/ShawnFoo/FXDanmaku)
 	
-4. About big gift message
-  *I most deeply think the gift animation is most  big trouble, which contains the cpu comsume and memory cosume. Obviously, I still use the third party vendor which name [FXAnimationEngine](https://github.com/ShawnFoo/FXAnimationEngine)
+##### About big gift message
+I most deeply think the gift animation is most  big trouble, which contains the cpu comsume and memory cosume. Obviously, I still use the third party vendor which name [FXAnimationEngine](https://github.com/ShawnFoo/FXAnimationEngine)
 	```
 	  fileprivate func playAnimation(with gift: IMMessage) {
          displayingGift = gift
