@@ -8,7 +8,7 @@ A swift project live app, we integrated Tencent Live Video Broadcasting SDK in t
 * Tencent Mobile Communication Cloud
 
 ## Main Logic 
-The project can be divided into three parts, they are home list, broadcast and user center etc.
+ The project can be divided into three parts, they are home list, broadcast and user center etc.
 
 * The data of home list was come from our back server, when user tap the specific data record the app will enter RoomViewController. 
 * The RoomViewController has play the role of pulling living stream for Tencent Server. and setup the IM chat related operations.
@@ -53,13 +53,13 @@ class IMMessage: Model {
 ```
 
 2. Text Message
-		The text message contains common text message which will show in message tableView, and danmaku message which will show in danmaku view. The common text message has been handled into rich attribute string with using[YYText](https://github.com/ibireme/YYText). The merit is reducing the UI controls of message table view）
+	*The text message contains common text message which will show in message tableView, and danmaku message which will show in danmaku view. The common text message has been handled into rich attribute string with using[YYText](https://github.com/ibireme/YYText). The merit is reducing the UI controls of message table view）
     
 3. Danmaku
-	It's comes from github's [FXDanmaku](https://github.com/ShawnFoo/FXDanmaku)
+	*It's comes from github's [FXDanmaku](https://github.com/ShawnFoo/FXDanmaku)
 	
 4. About big gift message
-  I most deeply think the gift animation is most  big trouble, which contains the cpu comsume and memory cosume. Obviously, I still use the third party vendor which name [FXAnimationEngine](https://github.com/ShawnFoo/FXAnimationEngine)
+  *I most deeply think the gift animation is most  big trouble, which contains the cpu comsume and memory cosume. Obviously, I still use the third party vendor which name [FXAnimationEngine](https://github.com/ShawnFoo/FXAnimationEngine)
 	```
 	  fileprivate func playAnimation(with gift: IMMessage) {
          displayingGift = gift
