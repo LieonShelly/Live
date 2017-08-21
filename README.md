@@ -87,7 +87,7 @@ class IMMessage: Model {
         }
         queue.addOperation(op1)
         queue.addOperation(op2)
-    } ```
+    } 
 
 ## Anchor version（definitely open hardware acceleration）
 There are no further ado beacause the logic of Anchor version(BroadcastViewController) is most likely RoomViewController, It can be simply summarized pushing video stream, login IM, create Room, create chat group, send text message, receive IMMessage, play gift animation etc.
